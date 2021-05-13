@@ -12,6 +12,8 @@ ptime = 0
 ctime = 0
 
 while True:
+
+
     sucess, img = cap.read()
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     result = hands.process(imgRGB)
